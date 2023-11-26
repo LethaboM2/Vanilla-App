@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="styling/style.css">
+</head>
+
+<body>
+    <div class="weather-app">
+        <header>
+            <form class="search_form" id="search-form">
+                <input type="search" placeholder="Search Location" required class="input" id="search_input"/>
+                <input type="submit" value="Search" class="search-button" />
+            </form>
+        </header>
+        <main>
+            <div class="weather">
+                <div class="temperature">
+                    <h1>
+                        <img src="icons/029-half-moon.png" class="current-weather-icon">
+                        18℃
+                    </h1>
+                    <p>
+                        20 November 2023
+                        <br />
+                        00:15 am
+                    </p>
+                </div>
+                <div>
+                    <h1>
+                        <img src="icons/pin (1).png" width="25px" class="location-pin">
+                        <span id="current_city">
+                            Cape Town
+                        </span>
+                    </h1>
+                    <p>
+                        Mostly Cloudy
+                        <br />
+                        <span>
+                            Feels like 15℃
+                        </span>
+                        <br />
+                        <span>
+                            Wind: 13km/h, Humidity: 89%
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            Coded by Lethabo, open-sourced on GitHub and hosted on Netlify
+        </footer>
+    </div>
+    <script src="java/index.js">
+
+    </script>
+</body>
+
+</html>
