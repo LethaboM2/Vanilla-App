@@ -45,10 +45,6 @@ footer {
   justify-content: space-between;
 }
 
-.temperature {
-  
-}
-
 .current-weather-icon {
   display: inline-block;
   font-size: 4px;
