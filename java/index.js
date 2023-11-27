@@ -1,7 +1,7 @@
 function refreshWeather(response) {
   let temperatureElement = document.querySelector("#temperature");
   let temperature = response.data.temperature.current;
-  let cityElement = document.querySelector("#currentCity");
+  let currentCityElement = document.querySelector("#currentCity");
   let descriptionElement = document.querySelector("#description");
   let humidityElement = document.querySelector("#humidity");
   let windSpeedElement = document.querySelector("#wind-speed");
@@ -50,7 +50,7 @@ function handleSearchSubmit(event) {
   let searchInput = document.querySelector("#search_input");
   let currentCityElement = document.querySelector("#currentCity");
   currentCityElement.innerHTML = searchInput.value;
-  
+
   searchCity(searchInput.value);
 }
 
