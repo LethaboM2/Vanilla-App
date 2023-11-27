@@ -41,7 +41,7 @@ function formatDate(date) {
 
 function searchCity(currentCity) {
   let apiKey = "ed6ft86f6oebcb23b5103ba6e7e43f72";
-  let apiUrl = "https://api.shecodes.io/weather/v1/current?query=${currentCity}&key=ed6ft86f6oebcb23b5103ba6e7e43f72&units=metric";
+  let apiUrl = 'https://api.shecodes.io/weather/v1/current?query=${currentCity}&key=${apiKey}&units=metric';
   axios.get(apiUrl).then(refreshWeather);
 }
 
@@ -50,6 +50,7 @@ function handleSearchSubmit(event) {
   let searchInput = document.querySelector("#search_input");
   let currentCityElement = document.querySelector("#currentCity");
   currentCityElement.innerHTML = searchInput.value;
+  
   searchCity(searchInput.value);
 }
 
