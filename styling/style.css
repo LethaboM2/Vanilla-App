@@ -7,6 +7,7 @@ footer {
   font-size: 10px;
   display: block;
   text-align: center;
+  padding: 30px 0 0 0;
 }
 
 .weather-app {
@@ -48,6 +49,18 @@ footer {
 .current-weather-icon {
   display: inline-block;
   font-size: 4px;
+}
+
+.temperature {
+  margin: 0;
+  font-size: 38px;
+  display: block
+  line-height: 48px;
+}
+
+.weather_details {
+  font-size: px;
+  display: contents;
 }
 
 .location-pin {
