@@ -54,8 +54,7 @@ footer {
 .temperature {
   margin: 0;
   font-size: 38px;
-  display: block
-  line-height: 48px;
+  display: block;
 }
 
 .weather_details {
